@@ -22,7 +22,6 @@ exclude_patterns = ["_build"]
 html_theme = "alabaster"
 html_static_path = []
 html_title = "followcheck"
-html_baseurl = "https://followcheck.readthedocs.io/"
 
 html_theme_options = {
     "description": "Is that outbound link really followable? Check it, do not assume it.",
