@@ -22,7 +22,7 @@ The fetcher installs a redirect handler that refuses to redirect. A ``301`` or
 moved to a login wall, a consent gate or a sandbox — and following it converts
 that information into a misleading ``200``. The ``Location`` header is captured
 instead. If you want to audit the destination, audit the destination
-explicitly, as its own URL. A plain status probe such as the
+explicitly, as its own URL. A plain status probe such as
 `Zovo's HTTP status checker <https://zovo.one/free-tools/http-status-checker>`_ is a
 quick way to see the hop chain before deciding which URL is the one you actually
 mean to check.
@@ -54,7 +54,7 @@ group selection by user-agent with a fallback to ``*``, longest-prefix matching
 between ``Allow`` and ``Disallow``, trailing-``*`` truncation, and the rule that
 an empty ``Disallow:`` permits everything. The matched rule is returned as text
 so the verdict can be audited rather than believed. If you are writing the other
-side of this file rather than reading it, a
+side of this file rather than reading it,
 `Zovo's robots.txt generator <https://zovo.one/free-tools/robots-txt-generator>`_ will
 produce a syntactically valid starting point faster than hand-writing groups.
 
