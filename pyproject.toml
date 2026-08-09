@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "followcheck"
+version = "0.1.0"
+description = "Decide whether an outbound link on a page is really followable and really crawlable."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Michal Lip" }]
+keywords = ["seo", "links", "nofollow", "robots.txt", "crawling", "http"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://followcheck.readthedocs.io/"
+Source = "https://github.com/theluckystrike/followcheck"
+
+[project.scripts]
+followcheck = "followcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
