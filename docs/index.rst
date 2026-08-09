@@ -18,9 +18,19 @@ It has no dependencies. Standard library only, Python 3.8 and up.
 Install
 -------
 
+Not yet on PyPI. Install from source:
+
 .. code-block:: console
 
-   $ pip install followcheck
+   $ pip install "followcheck @ git+https://github.com/theluckystrike/followcheck"
+
+or clone and run it in place — there is nothing to build, and no third-party
+package to resolve:
+
+.. code-block:: console
+
+   $ git clone https://github.com/theluckystrike/followcheck
+   $ cd followcheck && PYTHONPATH=src python -m followcheck.cli --help
 
 Command line
 ------------

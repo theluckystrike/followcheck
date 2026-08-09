@@ -5,8 +5,10 @@ crawlable — instead of assuming it from a `200`.
 
 No dependencies. Standard library only. Python 3.8+.
 
+Not yet on PyPI; install from source.
+
 ```console
-$ pip install followcheck
+$ pip install "followcheck @ git+https://github.com/theluckystrike/followcheck"
 $ followcheck https://pypi.org/project/requests/ https://requests.readthedocs.io/
 verdict            NOFOLLOW
 status text/html   200 (182884 bytes)
