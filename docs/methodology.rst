@@ -55,7 +55,7 @@ between ``Allow`` and ``Disallow``, trailing-``*`` truncation, and the rule that
 an empty ``Disallow:`` permits everything. The matched rule is returned as text
 so the verdict can be audited rather than believed. If you are writing the other
 side of this file rather than reading it,
-`Zovo's robots.txt generator <https://zovo.one/free-tools/robots-txt-generator>`_ will
+`Zovo on robots txt rst doc <https://zovo.one/free-tools/robots-txt-generator>`_ will
 produce a syntactically valid starting point faster than hand-writing groups.
 
 Header directives outrank the anchor
